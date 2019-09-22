@@ -3,7 +3,7 @@ function setup() {
 }
 var ballx=50
 var ballSpeed=3
-var ballColor=10
+var ballSize=10
 
 var ballx2=50
 var ballSpeed2=6
@@ -12,14 +12,14 @@ var ballSpeed2=6
 function draw() {
   background(220);
   noStroke()
-  fill(ballColor,0,0)
-  ballColor=ballColor+ballSpeed
-  ellipse(ballx,200 ,mouseX)
+  fill(100,0,0)
+  ballSize=ballSize+ballSpeed
+  ellipse(ballx,200 ,300)
   noStroke()
-  fill(0,0,ballColor)
-  ballColor=ballColor+ballSpeed2
-  ellipse(ballx2,mouseY,50)
-  
+  fill(0,0,255)
+  ballSize=ballSize+ballSpeed2
+  ellipse(ballx2,300,ballSize)
+  ballSize= ballx2+0.5
   
   ballx = ballx+ballSpeed
   ballx2 = ballx2+ballSpeed2
